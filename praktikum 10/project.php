@@ -1,3 +1,7 @@
+<?php
+    require "proses/session.php";
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -16,7 +20,7 @@
     <div class="container-fluid">
         <!-- Header -->
         <?php
-        require "header.php"
+        require "header.php";
         ?>
     </div>
 
@@ -25,23 +29,21 @@
             <div class="col-3">
                 <!-- sidebar -->
                 <?php
-                require "sidebar.php"
+                require "sidebar.php";
                 ?>
             </div>
 
             <div class="col-9">
-            <div class="card" style="width: 18rem;">
-                <img src="dyo.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Raden Dyo</h5>
-                    <p class="card-text">Motto " Be Grateful for what you have"</p>
+                <div class="card">
+                    <h5 class="card-header">SISTEM INFORMASI PEMINJAMAN BARANG JURUSAN TEKNOLOGI INFORMASI DAN KOMPUTER --> POLITEKNIK NEGERI LHOKSEUMAWE</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Peminjaman Barang</h5>
+                        <p class="card-text">Lakukan peminjaman barang secara cepat sekarang juga, dengan satu tombol dibawah!.</p>
+                        <a href="#" class="btn btn-primary">Klik disini</a>
+
+                        <?php echo $_SESSION['username'] ?>
+                    </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> Dosen Jurusan Teknologi Informasi dan Komputer</li>
-                    <li class="list-group-item">Prodi Teknik Informatika</li>
-                    <li class="list-group-item">Politeknik Negeri Lhokseumawe</li>
-                </ul>
-</div>
             </div>
         </div>
     </div>

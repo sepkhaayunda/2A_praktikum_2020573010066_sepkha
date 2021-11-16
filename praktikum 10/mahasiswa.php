@@ -1,3 +1,7 @@
+<?php
+    require "proses/session.php";
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -31,15 +35,15 @@
 
             <div class="col-9">
             <div class="card" style="width: 18rem;">
-                <img src="dyo.jpeg" class="card-img-top" alt="...">
+                <img src="suzy.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Raden Dyo</h5>
+                    <h5 class="card-title">Sheep</h5>
                     <p class="card-text">Motto " Be Grateful for what you have"</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> Dosen Jurusan Teknologi Informasi dan Komputer</li>
+                    <li class="list-group-item">Jurusan Teknologi Informasi dan Komputer</li>
                     <li class="list-group-item">Prodi Teknik Informatika</li>
-                    <li class="list-group-item">Politeknik Negeri Lhokseumawe</li>
+                    <li class="list-group-item">Kelas TI-2A</li>
                 </ul>
 </div>
             </div>

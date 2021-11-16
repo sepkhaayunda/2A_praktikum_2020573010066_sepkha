@@ -1,3 +1,7 @@
+<?php
+    require "proses/session.php";
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -30,17 +34,39 @@
             </div>
 
             <div class="col-9">
-            <div class="card" style="width: 18rem;">
-                <img src="dyo.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Raden Dyo</h5>
-                    <p class="card-text">Motto " Be Grateful for what you have"</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="infocus.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">INFOCUS</h5>
+                    </div>
+                    </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> Dosen Jurusan Teknologi Informasi dan Komputer</li>
-                    <li class="list-group-item">Prodi Teknik Informatika</li>
-                    <li class="list-group-item">Politeknik Negeri Lhokseumawe</li>
-                </ul>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="kabel.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">KABEL RJ45</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="stopkontak.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">STOP KONTAK</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="spidol.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SPIDOL</h5>
+                    </div>
+                    </div>
+                </div>
 </div>
             </div>
         </div>
