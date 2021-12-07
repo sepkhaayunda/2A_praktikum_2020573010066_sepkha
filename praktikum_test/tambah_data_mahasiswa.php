@@ -1,7 +1,6 @@
 <?php
-    require "proses/session.php";
+require "proses/session.php";
 ?>
-
 <!doctype html>
 <html lang="en">
 
@@ -20,7 +19,7 @@
     <div class="container-fluid">
         <!-- Header -->
         <?php
-        require "header.php";
+        require "header.php"
         ?>
     </div>
 
@@ -29,24 +28,38 @@
             <div class="col-3">
                 <!-- sidebar -->
                 <?php
-                require "sidebar.php";
+                require "sidebar.php"
                 ?>
             </div>
 
             <div class="col-9">
-                <div class="card">
-                    <h5 class="card-header">SISTEM INFORMASI PEMINJAMAN BARANG JURUSAN TEKNOLOGI INFORMASI DAN KOMPUTER
-                         POLITEKNIK NEGERI LHOKSEUMAWE</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Peminjaman Barang</h5>
-                        <p class="card-text">Lakukan peminjaman barang secara cepat sekarang juga, dengan satu tombol dibawah!.</p>
-                        <a href="#" class="btn btn-primary">Klik disini</a>
-
-                        <?php echo $_SESSION['username'] ?>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <td>Nama Lengkap:</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Alamat:</td>
+                        <td><textarea name="Alamat" rows="8" cols="31" placeholder="Alamat"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Simpan">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

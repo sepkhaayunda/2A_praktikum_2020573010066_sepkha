@@ -1,7 +1,3 @@
-<?php
-    require "proses/session.php";
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -20,7 +16,7 @@
     <div class="container-fluid">
         <!-- Header -->
         <?php
-        require "header.php";
+        require "header.php"
         ?>
     </div>
 
@@ -29,22 +25,33 @@
             <div class="col-3">
                 <!-- sidebar -->
                 <?php
-                require "sidebar.php";
+                require "sidebar.php"
                 ?>
             </div>
 
             <div class="col-9">
-                <div class="card">
-                    <h5 class="card-header">SISTEM INFORMASI PEMINJAMAN BARANG JURUSAN TEKNOLOGI INFORMASI DAN KOMPUTER
-                         POLITEKNIK NEGERI LHOKSEUMAWE</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Peminjaman Barang</h5>
-                        <p class="card-text">Lakukan peminjaman barang secara cepat sekarang juga, dengan satu tombol dibawah!.</p>
-                        <a href="#" class="btn btn-primary">Klik disini</a>
+            <div class="container">
+            <div class="row">
+                <div class="col" style="background-color: blue;">INFOCUS</div>
+                <div class="col" style="background-color: blue;">KABEL RJ45</div>
+                <div class="col" style="background-color: blue;">STOP KONTAK</div>
+                <div class="col" style="background-color: blue;">SPIDOL</div>
+            </div>
 
-                        <?php echo $_SESSION['username'] ?>
-                    </div>
-                </div>
+            <div class="row">
+                <div class="col">TI-2A</div>
+                <div class="col">TI-4A</div>
+                <div class="col">TI-3B</div>
+                <div class="col">TI-2B</div>
+            </div>
+
+            <div class="row">
+                <div class="col">TI-1A</div>
+                <div class="col">TI-1C</div>
+                <div class="col">TI-3C</div>
+                <div class="col">TRKJ-1A</div>
+            </div>
+            </div>
             </div>
         </div>
     </div>

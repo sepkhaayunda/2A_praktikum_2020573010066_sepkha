@@ -1,7 +1,3 @@
-<?php
-    require "proses/session.php";
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -20,7 +16,7 @@
     <div class="container-fluid">
         <!-- Header -->
         <?php
-        require "header.php";
+        require "header.php"
         ?>
     </div>
 
@@ -29,22 +25,45 @@
             <div class="col-3">
                 <!-- sidebar -->
                 <?php
-                require "sidebar.php";
+                require "sidebar.php"
                 ?>
             </div>
 
             <div class="col-9">
-                <div class="card">
-                    <h5 class="card-header">SISTEM INFORMASI PEMINJAMAN BARANG JURUSAN TEKNOLOGI INFORMASI DAN KOMPUTER
-                         POLITEKNIK NEGERI LHOKSEUMAWE</h5>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="infocus.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Peminjaman Barang</h5>
-                        <p class="card-text">Lakukan peminjaman barang secara cepat sekarang juga, dengan satu tombol dibawah!.</p>
-                        <a href="#" class="btn btn-primary">Klik disini</a>
-
-                        <?php echo $_SESSION['username'] ?>
+                        <h5 class="card-title">INFOCUS</h5>
+                    </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="kabel.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">KABEL RJ45</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="stopkontak.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">STOP KONTAK</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="spidol.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SPIDOL</h5>
+                    </div>
+                    </div>
+                </div>
+</div>
             </div>
         </div>
     </div>

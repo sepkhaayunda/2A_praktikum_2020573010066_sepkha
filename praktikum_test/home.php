@@ -1,4 +1,4 @@
-<?php
+<?php 
     require "proses/session.php";
 ?>
 
@@ -35,11 +35,10 @@
 
             <div class="col-9">
                 <div class="card">
-                    <h5 class="card-header">SISTEM INFORMASI PEMINJAMAN BARANG JURUSAN TEKNOLOGI INFORMASI DAN KOMPUTER
-                         POLITEKNIK NEGERI LHOKSEUMAWE</h5>
+                    <h5 class="card-header">SISTEM INFORMASI PEMINJAMAN BARANG JURUSAN TEKNOLOGI INFORMASI DAN KOMPUTER POLITEKNIK NEGERI LHOKSEUMAWE</h5>
                     <div class="card-body">
-                        <h5 class="card-title">Peminjaman Barang</h5>
-                        <p class="card-text">Lakukan peminjaman barang secara cepat sekarang juga, dengan satu tombol dibawah!.</p>
+                        <h5 class="card-title">PEMINJAMAN BARANG</h5>
+                        <p class="card-text">Peminjaman barang bisa dilakukan dengan mengclick di bawah sini</p>
                         <a href="#" class="btn btn-primary">Klik disini</a>
 
                         <?php echo $_SESSION['username'] ?>

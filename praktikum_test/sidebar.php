@@ -62,20 +62,23 @@
 <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
         <ul class="nav nav-pills flex-column mb-auto">
+
             <li class="nav-item">
-                <a href="index.php" class="nav-link active " aria-current="page">
+                <a href="home" class="nav-link link-dark
+                <?php if ($_GET['x'] == 'home') echo 'active';?>">
                     <svg class="bi me-2" width="16" height="16">
                         <use xlink:href="#home" />
                     </svg>
                     Home
                 </a>
             </li>
+
             <?php
             if ($row['level'] == 'mahasiswa') {
             ?>
 
                 <li>
-                    <a href="mahasiswa.php" class="nav-link link-dark">
+                    <a href="mhs" class="nav-link link-dark <?php if ($_GET['x'] == 'mhs') echo 'active';?>">
                         <svg class="bi me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
                             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
@@ -93,7 +96,7 @@
             ?>
 
                 <li>
-                    <a href="peminjaman.php" class="nav-link link-dark">
+                    <a href="peminjaman" class="nav-link link-dark <?php if ($_GET['x'] == 'peminjaman') echo 'active';?>">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#table" />
                         </svg>
@@ -106,8 +109,9 @@
             if ($row['level'] == 'admin') {
             ?>
 
+
                 <li>
-                    <a href="barang.php" class="nav-link link-dark">
+                    <a href="barang" class="nav-link link-dark <?php if ($_GET['x'] == 'barang') echo 'active';?>">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#grid" />
                         </svg>
@@ -117,12 +121,12 @@
 
             <?php
             }
-            if ($row['level'] == 'Admin'){
+            if ($row['level'] == 'admin') {
             ?>
 
+
                 <li>
-                <a href="dosen.php?url=dosen" class="nav-link link-dark" <?php 
-                    if ($_GET['url'] == 'dosen') echo 'active'; ?>"> 
+                    <a href="dosen" class="nav-link link-dark <?php if ($_GET['x'] == 'dosen') echo 'active';?>">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#people-circle" />
                         </svg>
@@ -136,14 +140,6 @@
             ?>
 
                 <hr>
-                <li>
-                    <a href="tambah_data_mahasiswa.php" class="nav-link link-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#people-circle" />
-                        </svg>
-                        Tambah Data Mahasiswa
-                    </a>
-                </li>
             <?php
             }
             ?>
